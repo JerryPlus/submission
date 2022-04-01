@@ -2,14 +2,18 @@
 pragma solidity ^0.8.10;
 
 contract HelloWorld {
-    uint number;
+    // store an unsigned integer
+    uint256 number;
 
-    function storeNumber(uint num) external {
+    constructor() {}
+
+    // set number to num
+    function storeNumber(uint256 num) external {
         number = num;
     }
 
-    function retrieveNumber() external view returns (uint){
+    // return the current number
+    function retrieveNumber() external view returns (uint256) {
         return number;
     }
 }
-
